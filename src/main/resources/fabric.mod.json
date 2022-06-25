@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "kotlin-config",
+  "version": "${version}",
+  "name": "Kotlin Config",
+  "description": "Config helper",
+  "authors": [
+    "Luna"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/kotlin-config/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.lunaluna.fabric.kotlinconfig.client.KotlinConfigClient"
+    ],
+    "main": [
+      "me.lunaluna.fabric.kotlinconfig.KotlinConfig"
+    ]
+  },
+  "mixins": [
+    "kotlin-config.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.8",
+    "fabric": "*",
+    "minecraft": "1.19"
+  }
+}
